@@ -134,7 +134,7 @@ class BadDadAndBeyond(MPServerAPI, MPVideoPad):
 		logging.basicConfig(filename=self.conf['d_files']['module']['log'], level=logging.DEBUG)
 
 	def route_next(self, route=None):
-		if route = None:
+		if route is None:
 			route = "1_BadDadMenu"
 
 		route_prompt = os.path.join(self.conf['media_dir'], "prompts", "%s.wav" % route)
