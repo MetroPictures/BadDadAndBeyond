@@ -22,7 +22,7 @@ KEY_MAP = {
 	'10_OverExpressesEnd':None,
 	'11_FilesOpenWithWrongProgramEnd':None,
 	'12_NoEatenSiblingsMenu':['13_YesLetStrangersUseYourIdentityMenu', '15_NoLetStrangersUseYourIdentityMenu'],
-	'13_YesLetStrangersUseYourIdentityMenu':['14_CatastrophicFailureEnd',], #what
+	'13_YesLetStrangersUseYourIdentityMenu':['14_CatastrophicFailureEnd','8_pervertsNetworkEnd_New'],
 	'14_CatastrophicFailureEnd':None,
 	'15_NoLetStrangersUseYourIdentityMenu':['16_YesInfectedbyPornVirusEnd', '17_NoInfectedbyPornVirusEnd'],
 	'16_YesInfectedbyPornVirusEnd':None,
@@ -36,12 +36,12 @@ KEY_MAP = {
 	'24_YesTriedTransferringHisUserAccountEnd':None,
 	'25_NoTriedTransferringHisUserAccountEnd':None,
 	'26_NoControlFreakinessMenu':['27_YesUnableToOpenHelpAndSupportMenu_New', '29_NoUnableToOpenHelpAndSupportMenu'],
-	'27_YesUnableToOpenHelpAndSupportMenu_New':['28_NoMistressEnd'], #what
+	'27_YesUnableToOpenHelpAndSupportMenu_New':['28_NoMistressEnd','22_OneGlitchEnd'],
 	'28_NoMistressEnd':None,
-	'29_NoUnableToOpenHelpAndSupportMenu':['30_UpdateSoftwareAvailableEnd_New'], #what
+	'29_NoUnableToOpenHelpAndSupportMenu':['30_UpdateSoftwareAvailableEnd_New', '22_OneGlitchEnd'],
 	'30_UpdateSoftwareAvailableEnd_New':None,
-	'31_NoSelfCriticalStoppedWorkingMenu':['32_LimboLassoMercuryNoSelfCriticalMenu'], #what
-	'32_LimboLassoMercuryNoSelfCriticalMenu':['33_YesSomaticNarcissistMenu'], #what
+	'31_NoSelfCriticalStoppedWorkingMenu':['32_LimboLassoMercuryNoSelfCriticalMenu','95_ExecutableUMLDracoNoFearLossOfControlMenu'],
+	'32_LimboLassoMercuryNoSelfCriticalMenu':['33_YesSomaticNarcissistMenu','40_NoSomaticNarcissistMenu'],
 	'33_YesSomaticNarcissistMenu':['34_YesPayMoreToAvoidTaxesMenu','37_NoPayMoreToAvoidTaxesMenu'],
 	'34_YesPayMoreToAvoidTaxesMenu':['35_YesTartuffeEnd','36_NoTartuffeEnd'],
 	'35_YesTartuffeEnd':None,
@@ -65,38 +65,38 @@ KEY_MAP = {
 	'53_YesStoppedRespondingToTextEnd':None,
 	'54_NoStoppedRespondingToTextEnd':None,
 	'55_NoMaskOfKindnessMenu':['56_YesApplicationManifestRunningImproperlyMenu','58_NoApplicationManifestRunningImproperlyMenu'],
-	'56_YesApplicationManifestRunningImproperlyMenu':[, '57_NoCompensatedForResourceLeaksEnd'], #what
+	'56_YesApplicationManifestRunningImproperlyMenu':['30_UpdateSoftwareAvailableEnd_New', '57_NoCompensatedForResourceLeaksEnd'],
 	'57_NoCompensatedForResourceLeaksEnd':None,
 	'58_NoApplicationManifestRunningImproperlyMenu':['59_YesGivenInToMadnessEnd', '60_NoGivenInToMadnessEnd'],
 	'59_YesGivenInToMadnessEnd':None,
 	'60_NoGivenInToMadnessEnd':None,
 	'61_HardwareMenu_New':['62_YesObsessedWithFailureMenu','83_NoObsessedWithFailureMenu'],
-	'62_YesObsessedWithFailureMenu':['63_LimboLassoMercuryCorruptedBloodMenu'], #what
+	'62_YesObsessedWithFailureMenu':['31_NoSelfCriticalStoppedWorkingMenu','72_NoAffectedByCorruptedBloodMenu'],
 	'63_LimboLassoMercuryCorruptedBloodMenu':['64_YesOpenAndCloseProgramsMenu', '66_NoOpenAndCloseProgramsMenu'],
-	'64_YesOpenAndCloseProgramsMenu':[,'65_NoObsessedWithHisPowerSupplyEnd'], #what
+	'64_YesOpenAndCloseProgramsMenu':['42_YesRootkitViolateEnd','65_NoObsessedWithHisPowerSupplyEnd'],
 	'65_NoObsessedWithHisPowerSupplyEnd':None,
-	'66_NoOpenAndCloseProgramsMenu':[,'67_NoDisplayErrorMessageEnd'], #what
+	'66_NoOpenAndCloseProgramsMenu':['59_YesGivenInToMadnessEnd','67_NoDisplayErrorMessageEnd'],
 	'67_NoDisplayErrorMessageEnd':None,
 	'68_ExecutableUMLDracoCorruptedBloodMenu_New':['69_YesSinOfSelfLoveMenu', '70_NoSinOfSelfLoveMenu'],
-	'69_YesSinOfSelfLoveMenu':[], #what
-	'70_NoSinOfSelfLoveMenu':['71_NoSystemFreezeEnd'], #what
+	'69_YesSinOfSelfLoveMenu':['51_NoKilledAllCrewEnd', '60_NoGivenInToMadnessEnd'],
+	'70_NoSinOfSelfLoveMenu':['35_YesTartuffeEnd', '71_NoSystemFreezeEnd'],
 	'71_NoSystemFreezeEnd':None,
 	'72_NoAffectedByCorruptedBloodMenu':['73_YesStrangeNoisesMenu', '79_NoStrangeNoisesMenu'],
 	'73_YesStrangeNoisesMenu':['74_YesLogicGateInputsFaultyMenu','76_NoLogicGateInputsFaultyMenu'],
-	'74_YesLogicGateInputsFaultyMenu':[,'75_NoCapsLockEnd'], #what
+	'74_YesLogicGateInputsFaultyMenu':['25_NoTriedTransferringHisUserAccountEnd','75_NoCapsLockEnd'],
 	'75_NoCapsLockEnd':None,
 	'76_NoLogicGateInputsFaultyMenu':['77_YesOpenFilesAtRandomEnd','78_NoOpenFilesAtRandomEnd'],
 	'77_YesOpenFilesAtRandomEnd':None,
 	'78_NoOpenFilesAtRandomEnd':None,
 	'79_NoStrangeNoisesMenu':['80_YesTrappedYouInLabyrinthMenu','81_NoTrappedYouInLabyrinthMenu'],
-	'80_YesTrappedYouInLabyrinthMenu':[,'81_NoTrappedYouInLabyrinthMenu'], #what
-	'81_NoTrappedYouInLabyrinthMenu':[,'82_NoBasicInputOutputSystemEnd'], #what
+	'80_YesTrappedYouInLabyrinthMenu':['16_YesInfectedbyPornVirusEnd','25_NoTriedTransferringHisUserAccountEnd'],
+	'81_NoTrappedYouInLabyrinthMenu':['75_NoCapsLockEnd','82_NoBasicInputOutputSystemEnd'],
 	'82_NoBasicInputOutputSystemEnd':None,
-	'83_NoObsessedWithFailureMenu':['84_YesFearLossOfControlMenu',], #what
+	'83_NoObsessedWithFailureMenu':['84_YesFearLossOfControlMenu','31_NoSelfCriticalStoppedWorkingMenu'],
 	'84_YesFearLossOfControlMenu':['85_YesStoppedYouFromConnectingMenu','88_NoStoppedYouFromConnectingMenu'],
 	'85_YesStoppedYouFromConnectingMenu':['86_YesControlledRemotelyMenu','87_NoControlledRemotelyMenu'],
-	'86_YesControlledRemotelyMenu':[], #what
-	'87_NoControlledRemotelyMenu':[], #what
+	'86_YesControlledRemotelyMenu':['8_pervertsNetworkEnd_New', '60_NoGivenInToMadnessEnd'],
+	'87_NoControlledRemotelyMenu':['54_NoStoppedRespondingToTextEnd', '45_YesStuckInfiniteLoopsEnd'], 
 	'88_NoStoppedYouFromConnectingMenu':['89_YesObsoleteMenu', '92_NoObsoleteMenu'],
 	'89_YesObsoleteMenu':['90_YesUninstallEnd', '91_NoUninstallEnd'],
 	'90_YesUninstallEnd':None,
@@ -105,11 +105,11 @@ KEY_MAP = {
 	'93_YesLazyEnd':None,
 	'94_NoLazyEnd':None,
 	'95_ExecutableUMLDracoNoFearLossOfControlMenu':['96_YesPromisesMenu','98_NoPromisesMenu'],
-	'96_YesPromisesMenu':['97_YesSortingAlgorithmMalfunctioningEnd'], #what
+	'96_YesPromisesMenu':['97_YesSortingAlgorithmMalfunctioningEnd', '94_NoLazyEnd'],
 	'97_YesSortingAlgorithmMalfunctioningEnd':None,
 	'98_NoPromisesMenu':['104_YesDataflowSquigglyColdAndCalculatingEnd','99_NoDataflowSquigglyPromisesEnd'],
 	'99_NoDataflowSquigglyPromisesEnd':None,
-	'100_LimboLassoMercuryNoFearLossOfControlMenu':['101_YesColdAndCalculatingMenu',], #what
+	'100_LimboLassoMercuryNoFearLossOfControlMenu':['101_YesColdAndCalculatingMenu','98_NoPromisesMenu'],
 	'101_YesColdAndCalculatingMenu':['102_YesFaultTolerantEnd', '103_NoFaultTolerantEnd'],
 	'102_YesFaultTolerantEnd':None,
 	'103_NoFaultTolerantEnd':None,
