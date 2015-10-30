@@ -143,7 +143,8 @@ class BadDadAndBeyond(MPServerAPI, MPVideoPad):
 			choice = self.prompt(route_prompt, release_keys=[ZERO, ONE])
 			return self.route_next(route=KEY_MAP[route][0 if choice is ZERO else 1])
 		else:
-			return self.say(route_prompt)
+			if self.say(route_prompt, interruptable=False):
+				return self.on_hang_up()
 
 		return False
 
@@ -159,7 +160,7 @@ class BadDadAndBeyond(MPServerAPI, MPVideoPad):
 
 	def run_script(self):
 		super(BadDadAndBeyond, self).run_script()
-		self.play_video("bad_dad.mp4", with_extras={"loop":""})
+		self.play_video("BAD_DAD.mp4", with_extras={"loop":""})
 		self.route_next()
 
 if __name__ == "__main__":
