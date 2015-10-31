@@ -6,8 +6,8 @@ from core.vars import BASE_DIR
 from core.api import MPServerAPI
 from core.video_pad import MPVideoPad
 
-ZERO = 13
-ONE = 3
+ZERO = 3
+ONE = 4
 
 KEY_MAP = {
 	'1_BadDadMenu':['2_SoftwareMenu','61_HardwareMenu_New'],
@@ -144,7 +144,7 @@ class BadDadAndBeyond(MPServerAPI, MPVideoPad):
 			return self.route_next(route=KEY_MAP[route][0 if choice is ZERO else 1])
 		else:
 			if self.say(route_prompt, interruptable=False):
-				return self.on_hang_up()
+				self.stop_video_pad()
 
 		return False
 
