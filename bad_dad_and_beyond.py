@@ -6,8 +6,8 @@ from core.vars import BASE_DIR
 from core.api import MPServerAPI
 from core.video_pad import MPVideoPad
 
-ZERO = 3
-ONE = 4
+ZERO = 5
+ONE = 6
 
 KEY_MAP = {
 	'1_BadDadMenu':['2_SoftwareMenu','61_HardwareMenu_New'],

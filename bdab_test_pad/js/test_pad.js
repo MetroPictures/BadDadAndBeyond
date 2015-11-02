@@ -31,7 +31,7 @@ $(document).ready(function() {
 			.click(function() {
 				var mapping = $($(this).find('.num')[0]).html();
 				$.ajax({
-					url : "mapping/" + (Number(mapping) + 3)
+					url : "mapping/" + (Number(mapping) + 5)
 				}).done(function(json) {
 					console.info(json);
 				});
