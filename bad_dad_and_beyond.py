@@ -148,6 +148,21 @@ class BadDadAndBeyond(MPServerAPI, MPVideoPad):
 
 		return False
 
+	def start(self):
+		if not super(BadDadAndBeyond, self).start():
+			return False
+
+		return self.play_video("BAD_DAD.mp4", with_extras={"loop":""})
+
+	def stop(self):
+		self.stop_video_pad()
+
+		for video_mapping in self.video_mappings:
+			self.db.delete("video_%s" % video_mapping.index)
+
+		return super(BadDadAndBeyond, self).stop()
+
+	'''
 	def reset_for_call(self):
 		for video_mapping in self.video_mappings:
 			self.db.delete("video_%s" % video_mapping.index)
@@ -157,10 +172,11 @@ class BadDadAndBeyond(MPServerAPI, MPVideoPad):
 	def on_hang_up(self):
 		self.stop_video_pad()
 		return super(BadDadAndBeyond, self).on_hang_up()
+	'''
 
 	def run_script(self):
 		super(BadDadAndBeyond, self).run_script()
-		self.play_video("BAD_DAD.mp4", with_extras={"loop":""})
+		
 		self.route_next()
 
 if __name__ == "__main__":
